@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="about_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" colorLabel="IBBuiltInLabel-Gray">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Aakanksha!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-V2-VMy">
+                                <rect key="frame" x="108" y="94" width="198" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.81176470588235294" green="0.34901960784313724" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite City:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-rJ-DBx">
+                                <rect key="frame" x="62" y="635.5" width="290" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.34901960780000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Color: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19u-zD-A2i">
+                                <rect key="frame" x="62" y="573" width="290" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.34901960780000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0625" translatesAutoresizingMaskIntoConstraints="NO" id="MxN-YT-oMv">
+                                <rect key="frame" x="62" y="174" width="290" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="0FE-FP-ra1"/>
+                                    <constraint firstAttribute="height" constant="364" id="QVW-3I-bmx"/>
+                                    <constraint firstAttribute="width" secondItem="MxN-YT-oMv" secondAttribute="height" multiplier="145:182" id="hGp-lx-58z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Things to Do:" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOV-N5-SF0">
+                                <rect key="frame" x="62" y="698" width="290" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.81176470590000005" green="0.34901960780000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ps4-6n-2gg">
+                                <rect key="frame" x="170" y="792" width="75" height="30"/>
+                                <state key="normal" title="Click Here!">
+                                    <color key="titleColor" red="0.81176470590000005" green="0.34901960780000002" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epm-tm-tNI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ps4-6n-2gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="03p-Dj-cxo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rpg-rJ-DBx" secondAttribute="trailing" constant="62" id="2iV-Ti-IJn"/>
+                            <constraint firstItem="bqa-V2-VMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="5Mp-gd-tQt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bqa-V2-VMy" secondAttribute="trailing" constant="108" id="9Jo-HP-4yF"/>
+                            <constraint firstItem="bqa-V2-VMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="BEC-3V-87c"/>
+                            <constraint firstItem="19u-zD-A2i" firstAttribute="top" secondItem="MxN-YT-oMv" secondAttribute="bottom" constant="35" id="D9A-Wh-LIu"/>
+                            <constraint firstItem="MxN-YT-oMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aN5-ws-Z1U"/>
+                            <constraint firstItem="19u-zD-A2i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="dKh-79-FOS"/>
+                            <constraint firstItem="MxN-YT-oMv" firstAttribute="top" secondItem="bqa-V2-VMy" secondAttribute="bottom" constant="50" id="e2d-iz-05l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOV-N5-SF0" secondAttribute="trailing" constant="62" id="emA-fp-2ju"/>
+                            <constraint firstItem="Rpg-rJ-DBx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="feK-6h-Jrb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="19u-zD-A2i" secondAttribute="trailing" constant="62" id="gEO-Bn-5c9"/>
+                            <constraint firstItem="aOV-N5-SF0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="iSX-QU-ciY"/>
+                            <constraint firstItem="aOV-N5-SF0" firstAttribute="top" secondItem="Rpg-rJ-DBx" secondAttribute="bottom" constant="35" id="j4n-08-bPF"/>
+                            <constraint firstItem="Rpg-rJ-DBx" firstAttribute="top" secondItem="19u-zD-A2i" secondAttribute="bottom" constant="35" id="msg-79-2Gx"/>
+                            <constraint firstItem="ps4-6n-2gg" firstAttribute="top" secondItem="aOV-N5-SF0" secondAttribute="bottom" constant="76.5" id="qhW-lh-nUi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteCity" destination="Rpg-rJ-DBx" id="KZM-pA-g6L"/>
+                        <outlet property="favoriteColor" destination="19u-zD-A2i" id="dhN-ZP-gYm"/>
+                        <outlet property="favoriteThingsToDo" destination="aOV-N5-SF0" id="SBN-OA-SPv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0625" width="1534" height="1917"/>
+    </resources>
+</document>
